@@ -1,0 +1,21 @@
+USE [CompanyDemo]
+GO
+
+/****** Object:  Table [dbo].[T_Assembly]    Script Date: 2019/7/23 10:02:07 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[T_Assembly](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Assembly] [varbinary](max) NOT NULL,
+ CONSTRAINT [PK_T_Assembly] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
